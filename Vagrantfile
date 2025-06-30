@@ -12,7 +12,7 @@ sudo apt-get install -y python-scipy
 sudo apt-get install -y python-nose python-pip python-matplotlib
 END
   config.vm.provision :shell, :inline => $requirements
-
+$tcp-socket, forwarding:80
   pipinstall = "/usr/bin/pip install Polygon2"
   config.vm.provision :shell, :inline => pipinstall
 

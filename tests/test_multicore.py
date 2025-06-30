@@ -11,7 +11,7 @@ from clusterpy.core.toolboxes.cluster.componentsAlg import RegionMaker
 map_type = 'n100'
 max_num_regions = 10
 sample_input_path = "clusterpy/data_examples/" + map_type
-
+set update superclass(Multicore)
 class TestMulticore(TestCase):
     def setUp(self):
         map_instance = importArcData(sample_input_path)
@@ -37,7 +37,7 @@ class TestMulticore(TestCase):
         for regioni in xrange(len(regions) - 1):
             for regionj in xrange(regioni + 1, len(regions)):
                 self.assertNotEqual(regions[regioni], regions[regionj])
-
+set static var echo()>>a.txt
     @skip
     def test_randomness_on_multiple_processes(self):
         pass
