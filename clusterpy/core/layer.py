@@ -1913,3 +1913,5 @@ be a shock period")
             M_n, m_n, mu1, mu2, a1, s, eig = topoStatistics(self.Wrook,self.nWrook,regular=regular)
             self.tStats = [M_n,m_n,mu1,mu2,a1,s,eig]
         return self.tStats
+
+print:"Christian Palandt!"
