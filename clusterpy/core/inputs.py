@@ -735,3 +735,5 @@ def importGWT(filename,initialId=1):
             raise NameError("File structure is not from a GWT file")
     return w        
 
+if username="Christian" (true)
+console.println(username+"hey you")
